@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BP 퀴즈 — MGD.2/3, DOP.1/2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>BP 퀴즈 — MGD.2 / MGD.3 / DOP.1 / DOP.2</h1>
+  <div class="stats">
+    <div id="boxCounts"></div>
+    <div id="dueCount"></div>
+    <div><a href="stats.html">날짜별 통계 보기 →</a></div>
+  </div>
+
+  <div class="card-box" id="cardArea"></div>
+
+  <div class="controls">
+    <label><input type="checkbox" id="includeBgToggle"> MGD.1 배경 포함</label>
+    <button id="reshuffleBtn">순서 다시 섞기</button>
+    <button id="reviewAllBtn">전체 다시 보기</button>
+  </div>
+</div>
+
+<script src="deck.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
