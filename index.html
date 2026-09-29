@@ -10,9 +10,20 @@
 <div class="wrap">
   <h1>BP 퀴즈 — MGD.2 / MGD.3 / DOP.1 / DOP.2</h1>
   <div class="stats">
+    <div id="examInfo"></div>
     <div id="boxCounts"></div>
     <div id="dueCount"></div>
     <div><a href="study.html">전체 보기</a> · <a href="stats.html">날짜별 통계 보기</a></div>
+  </div>
+
+  <div class="mode-row">
+    <span class="mode-label">범위</span>
+    <div id="scopeChips" class="chips"></div>
+  </div>
+  <div class="mode-row">
+    <span class="mode-label">순서</span>
+    <label><input type="radio" name="order" id="orderShuffle" value="shuffle"> 섞기</label>
+    <label><input type="radio" name="order" id="orderSequential" value="sequential"> BP 번호순</label>
   </div>
 
   <div class="card-box" id="cardArea"></div>

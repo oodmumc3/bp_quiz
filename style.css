@@ -99,6 +99,32 @@ button {
   .controls button { background: #3a3a3c; color: #eee; }
 }
 
+/* index.html 범위·순서 선택, 시험 D-day, 흐름 줄 */
+#examInfo { font-weight: 600; }
+.mode-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+.mode-label { flex: none; width: 32px; font-size: 12px; color: #888; }
+.mode-row label { display: flex; align-items: center; gap: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12px; padding: 6px 10px; border-radius: 999px; background: #eee; color: #333; }
+.chip.active { background: #333; color: #fff; }
+.tag.retry { color: #b3261e; }
+.flow { font-size: 12.5px; line-height: 1.6; color: #777; margin-bottom: 14px; }
+.flow-group.current { color: #111; font-weight: 700; }
+@media (prefers-color-scheme: dark) {
+  .chip { background: #3a3a3c; color: #eee; }
+  .chip.active { background: #eee; color: #111; }
+  .tag.retry { color: #ff8a80; }
+  .flow { color: #aaa; }
+  .flow-group.current { color: #fff; }
+}
+
 /* stats.html 전용 */
 .panel {
   background: #fff;
